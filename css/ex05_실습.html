@@ -15,33 +15,35 @@
         color: white;
         padding: 10px;
         margin: 0px;
-      }                                            
+      }
       h2 {
         color: red;
         text-align: center;
         font-size: 1.4rem;
       }
 
-      div div {
-        border: 1px solid black;
+      div {
+        border: 20px solid palevioletred; /*container 라는 부모요소 때문에 자식으로 
+        되는거 같음, container 에서 border 태그 빼면 이 태그로 인식됨.*/
       }
+
       p {
         font-size: 1.2rem;
         font-weight: 700;
-        text-align: center;
+
         line-height: 30px;
       }
       #container {
-        width: 600px;
-        font-family: "맑은 고딕" 고딕 궁서;
+        width: 700px;
+        font-family: "맑은 고딕", 고딕, 궁서;
         margin: 0 auto;
         box-shadow: 10px 10px 40px 10px rgb(123, 123, 156);
-        padding: 10px 20px 30px 40px;/*오른쪽 방향으로 돈다*/
+        padding: 10px 20px 30px 40px; /*오른쪽 방향으로 돈다*/
 
-        border: 1px solid red;/*밑에 3개를 동시에 표현해줌, 다 써야 반영됨*/
+        border: 20px solid red; /*밑에 3개를 동시에 표현해줌, 다 써야 반영됨*/
         border-style: double;
         border-color: blue;
-        border-width: 2px;
+        border-width: 20px; /* 더 자세한거가 반영 되나봄*/
         border-radius: 100px;
       }
 
@@ -56,23 +58,22 @@
       #container img {
         width: 100%;
         margin-top: 50px;
-        border-top-left-radius : 100px;
+        border-top-left-radius: 100px;
         border-top-right-radius: 100px;
       }
 
-      #bear{ 
+      #bear {
         border-radius: 100%;
         box-shadow: 10px 5px 10px 5px yellow;
         border: 5px dashed wheat;
-        display: block;
-        margin: 0 auto;
-        
+      }
+      body {
+        text-align: center;
       }
     </style>
   </head>
   <body>
-
-    <img id="bear" src="/img/bear.png" alt="">
+    <img id="bear" src="/img/bear.png" alt="" />
     <div id="container">
       <img src="/img/tangerines.webp" alt="오렌지" />
       <div id="check">
